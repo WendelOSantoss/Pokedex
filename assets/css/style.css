@@ -1,5 +1,5 @@
 body {
-  background-color: orangered;
+  background-color: coral;
   color: white;
   margin: 0;
   font-family: rubik;
@@ -11,6 +11,7 @@ body {
 }
 
 h1 {
+  background-color: brown;
   text-transform: uppercase;
   text-align: center;
   font-size: 54px;
@@ -26,7 +27,7 @@ h1 {
 .card {
   list-style: none;
   padding: 40px;
-  background-color: #f4f4f4;
+  background-color: brown;
   color: #222;
   text-align: center;
 }
@@ -101,3 +102,121 @@ button:hover {
   transform: translate(-1px);
   box-shadow: 0px 1px 2px darkred;
 }
+
+
+#footer{
+  text-align: center;
+  background-color: brown;
+}
+
+@media (max-width:900px) {
+  body {
+    background-color: coral;
+    color: white;
+    margin: 0;
+    font-family: rubik;
+  }
+  
+  .container {
+    padding: 40px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    background-color: brown;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 54px;
+  }
+  
+  #pokedex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 0.9fr));
+    grid-gap: 20px;
+    padding-inline-start: 0;
+  }
+  
+  .card {
+    list-style: none;
+    padding: 40px;
+    background-color: brown;
+    color: #222;
+    text-align: center;
+  }
+  
+  .card:hover {
+    animation: bounce 0.5s linear;
+    cursor: pointer;
+  }
+  
+  .card-title {
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    font-size: 32px;
+    font-weight: normal;
+  }
+  .card-subtitle {
+    margin-top: 5px;
+    color: #666;
+    font-weight: lighter;
+  }
+  
+  .card-image {
+    height: 180px;
+  }
+  
+  @keyframes bounce {
+    20% {
+      transform: translateY(-6px);
+    }
+    40% {
+      transform: translateY(0px);
+    }
+  
+    80% {
+      transform: translateY(-2px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: white;
+    opacity: 0.95;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  #closebutton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  button {
+    background-color: red;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    transition: transform 100ms;
+  }
+  
+  button:hover {
+    cursor: pointer;
+    transform: translate(-1px);
+    box-shadow: 0px 1px 2px darkred;
+  }
+  
+  
+  #footer{
+    text-align: center;
+    background-color: brown;
+  }
