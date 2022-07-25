@@ -44,7 +44,7 @@ const displayPopup = (pokeman) => {
         <div class="card">
             <img class="card-image" src="${image}"/>
             <h2 class="card-title">${pokeman.id}. ${pokeman.name}</h2>  
-            <p><small>Altura:</small>${pokeman.height} | <small>Peso </small>${pokeman.weight} | <small>Tipo:</small>${type}
+            <p><small>Height:</small>${pokeman.height} | <small>Weight </small>${pokeman.weight} | <small>Tipo:</small>${type}
             <p><spam>Hp: </spam>${pokeman.stats[`0`].base_stat}</p>
             <p><spam>Attack: </spam>${pokeman.stats[`1`].base_stat}</p>
             <p><spam>Defense: </spam>${pokeman.stats[`2`].base_stat}</p>
