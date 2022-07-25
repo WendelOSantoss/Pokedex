@@ -39,14 +39,19 @@ const displayPopup = (pokeman) => {
   const image = pokeman.sprites["front_default"];
   const htmlString = `
     <div class="popup">
-        <button id ="closebutton" onclick="closePopup()">close
+        <button id ="closebutton" onclick="closePopup()">Fechar
         </button>
         <div class="card">
             <img class="card-image" src="${image}"/>
             <h2 class="card-title">${pokeman.id}. ${pokeman.name}</h2>  
             <p><small>Altura:</small>${pokeman.height} | <small>Peso </small>${pokeman.weight} | <small>Tipo:</small>${type}
+            <p><spam>Hp: </spam>${pokeman.stats[`0`].base_stat}</p>
+            <p><spam>Attack: </spam>${pokeman.stats[`1`].base_stat}</p>
+            <p><spam>Defense: </spam>${pokeman.stats[`2`].base_stat}</p>
+            <p><spam>Special-attack: </spam>${pokeman.stats[`3`].base_stat}</p>
+            <p><spam>Special-defense: </spam>${pokeman.stats[`4`].base_stat}</p>
+            <p><spam>Speed: </spam>${pokeman.stats[`5`].base_stat}</p>
 
-            
         </div> 
     </div>
     `;
